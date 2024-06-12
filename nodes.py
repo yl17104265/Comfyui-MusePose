@@ -548,8 +548,8 @@ class posealign_class:
         args = Param(
                      os.path.join(PROJECT_DIR,"pose/config/yolox_l_8xb8-300e_coco.py"),
                      os.path.join(PROJECT_DIR,"pose/config/dwpose-l_384x288.py"),
-                     "../../models/misc/Comfyui_MusePose/dwpose/yolox_l_8x8_300e_coco.pth",
-                     "../../models/misc/Comfyui_MusePose/dwpose/dw-ll_ucoco_384.pth",
+                     "/data/users/cuigh/ComfyUI/models/misc/Comfyui_MusePose/dwpose/yolox_l_8x8_300e_coco.pth",
+                     "/data/users/cuigh/ComfyUI/models/misc/Comfyui_MusePose/dwpose/dw-ll_ucoco_384.pth",
                      None, 
                      None,
                      detect_resolution,
