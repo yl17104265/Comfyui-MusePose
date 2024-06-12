@@ -548,8 +548,8 @@ class posealign_class:
         args = Param(
                      os.path.join(PROJECT_DIR,"pose/config/yolox_l_8xb8-300e_coco.py"),
                      os.path.join(PROJECT_DIR,"pose/config/dwpose-l_384x288.py"),
-                     os.path.join(PROJECT_DIR,"pretrained_weights/dwpose/yolox_l_8x8_300e_coco.pth"),
-                     os.path.join(PROJECT_DIR,"pretrained_weights/dwpose/dw-ll_ucoco_384.pth"), 
+                     "../../models/misc/Comfyui_MusePose/dwpose/yolox_l_8x8_300e_coco.pth",
+                     "../../models/misc/Comfyui_MusePose/dwpose/dw-ll_ucoco_384.pth",
                      None, 
                      None,
                      detect_resolution,
@@ -593,13 +593,15 @@ def scale_video(video,width,height):
 
 def musepose(args, image_path, video):
     config = OmegaConf.load(args.config)
-    pretrained_base_model_path = os.path.join(PROJECT_DIR, config.pretrained_base_model_path)
-    pretrained_vae_path = os.path.join(PROJECT_DIR, config.pretrained_vae_path)
-    image_encoder_path = os.path.join(PROJECT_DIR, config.image_encoder_path)
-    denoising_unet_path = os.path.join(PROJECT_DIR, config.denoising_unet_path)
-    reference_unet_path = os.path.join(PROJECT_DIR, config.reference_unet_path)
-    pose_guider_path = os.path.join(PROJECT_DIR, config.pose_guider_path)
-    motion_module_path = os.path.join(PROJECT_DIR, config.motion_module_path)
+    pretrained_base_model_path = config.pretrained_base_model_path
+    pretrained_vae_path = config.pretrained_vae_path
+    image_encoder_path = config.image_encoder_path
+
+    denoising_unet_path = config.denoising_unet_path
+    reference_unet_path = config.reference_unet_path
+    pose_guider_path = config.pose_guider_path
+    motion_module_path = config.motion_module_path
+
     inference_config_path = os.path.join(PROJECT_DIR, config.inference_config)
 
     if config.weight_dtype == "fp16":
