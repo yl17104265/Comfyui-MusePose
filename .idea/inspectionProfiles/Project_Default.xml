@@ -1,0 +1,39 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="ignoredPackages">
+        <value>
+          <list size="19">
+            <item index="0" class="java.lang.String" itemvalue="yacs" />
+            <item index="1" class="java.lang.String" itemvalue="facexlib" />
+            <item index="2" class="java.lang.String" itemvalue="basicsr" />
+            <item index="3" class="java.lang.String" itemvalue="realesrgan" />
+            <item index="4" class="java.lang.String" itemvalue="dlib-bin" />
+            <item index="5" class="java.lang.String" itemvalue="imageio-ffmpeg" />
+            <item index="6" class="java.lang.String" itemvalue="pydub" />
+            <item index="7" class="java.lang.String" itemvalue="numpy" />
+            <item index="8" class="java.lang.String" itemvalue="face_alignment" />
+            <item index="9" class="java.lang.String" itemvalue="kornia" />
+            <item index="10" class="java.lang.String" itemvalue="av" />
+            <item index="11" class="java.lang.String" itemvalue="resampy" />
+            <item index="12" class="java.lang.String" itemvalue="gfpgan" />
+            <item index="13" class="java.lang.String" itemvalue="librosa" />
+            <item index="14" class="java.lang.String" itemvalue="mq_http_sdk" />
+            <item index="15" class="java.lang.String" itemvalue="gradio" />
+            <item index="16" class="java.lang.String" itemvalue="joblib" />
+            <item index="17" class="java.lang.String" itemvalue="nltk" />
+            <item index="18" class="java.lang.String" itemvalue="safetensors" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="dict.*" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
